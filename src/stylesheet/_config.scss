@@ -1,0 +1,12 @@
+$font-style : Arial;
+$light-color : #f4f4f4;
+$pri-color : #ff8077;
+
+@function set-col($color){
+    @if(lightness($color) > 50){
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}
